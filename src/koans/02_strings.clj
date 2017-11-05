@@ -4,13 +4,13 @@
 
 (meditations
   "A string is nothing more than text surrounded by double quotes"
-  (= __ "hello")
+  (= "hello" "hello")
 
   "But double quotes are just magic on top of something deeper"
-  (= __ (str 'world))
+  (= "world" (str 'world))
 
   "You can do more than create strings, you can put them together"
-  (= "Cool right?" (str __ __))
+  (= "Cool right?" (str ["Cool right?"]))
 
   "You can even get certain characters"
   (= \C (get "Characters" __))
